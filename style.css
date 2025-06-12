@@ -1,0 +1,52 @@
+/* Cores personalizadas para o azul da Microsoft */
+.text-blue-microsoft {
+    color: #0078D4;
+}
+.bg-blue-microsoft {
+    background-color: #0078D4;
+}
+.hover\:bg-blue-microsoft-dark:hover {
+    background-color: #005A9E;
+}
+
+/* Garantindo que as fontes sejam mais modernas e legíveis */
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Animação para entrada de elementos */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação para o logo do Windows 11 no Hero */
+.windows-blob-animation {
+    animation: blob-pulse 3s infinite ease-in-out;
+}
+
+@keyframes blob-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+}
+
+/* Custom scrollbar para um toque mais moderno (opcional, pode remover se não gostar) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1; /* gray-300 */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; /* gray-400 */
+}
